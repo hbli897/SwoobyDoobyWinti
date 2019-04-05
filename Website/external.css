@@ -1,0 +1,79 @@
+h1 {
+    text-align: center;
+    /*display: inline-block;*/
+    font-family: Consolas;
+    text-decoration: none;
+    margin: 2px 0;
+    padding: 0.5em 1em;
+    color: #000000;
+}
+#Text {
+    font-family: Consolas;
+    font-size: large;
+}
+
+
+
+.BTN_big {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 2px 0;*/
+    border: solid 1px transparent;
+    /*border-radius: 4px;*/
+    width: 50px;
+    height: 50px;
+    padding: 0.5em 1em;
+    color: #000000;
+}
+.BTN_small {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+   /* border: solid 1px transparent;*/
+    /*border-radius: 4px;*/
+    width: 25px;
+    height: 25px;
+    padding: 0.5em 1em;
+    color: #000000;
+}
+.BTN_Aufgaben {
+    background-color: #ff6666;
+}
+.BTN_Chats {
+    background-color: #ff6a00;
+}
+.BTN_Kalender {
+    background-color: #4800ff;
+}
+.BTN_Help {
+    background-color: #4cff00;
+}
+.BTN_Index {
+    background-color: #00ff21;
+}
+.BTN_Profil {
+    background-color: #0094ff;
+}
+.BTN_Dashboard {
+    background-color: #ff49e6
+}
+
+
+#rectangle {
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 365px;
+    height: auto;
+    background-color: #9b9b9b;
+    padding-bottom: 50px;
+}
+
+#rectangle_data {
+    margin: 0 auto;
+    width: 335px;
+    height: auto;
+    background-color: #9b9b9b;
+    padding-bottom: 50px;
+}
