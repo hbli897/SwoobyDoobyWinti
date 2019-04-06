@@ -40,7 +40,8 @@
     text-decoration: none;
     margin: 1px;
     /*border-radius: 4px;*/
-    width: 5%;
+    /*width: 5%;*/
+	width: auto;
     height: 25px;
     padding: 0.5em 1em;
     color: #000000;
