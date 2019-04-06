@@ -109,7 +109,7 @@ function write_all() {
     for (let i = 0; i < Peoples.length; i++) {
 
         console.log(i);
-        document.getElementById(Peoples[i].Output_id).innerHTML += `<fieldset id = "fieldset" ><table><tr><th> <img id="profile_pic" src="profile_pic.png" ;/></th><th> <h1 class="Titel Position"> ${Peoples[i].Name}</h1> <br /> <p class="Text Position">${Peoples[i].Gebiet}</p ></th ></tr ></table ></fieldset >`;
+        document.getElementById(Peoples[i].Output_id).innerHTML += `<fieldset id = "fieldset" ><table><tr><th id="thpic"> <img id="profile_pic" src="profile_pic.png" ;/></th><th> <h1 class="h1"> ${Peoples[i].Name}</h1> <br /> <p class="Text">${Peoples[i].Gebiet}</p ></th ></tr ></table ></fieldset >`;
     }
 }
 write_all();
