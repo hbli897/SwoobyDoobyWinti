@@ -3,7 +3,20 @@ const Output = document.getElementById("Output");
 //var Start_Notifications = ['Einkaufen', '10.04.2019', 'Aufräumen', '8.04.2019'];
 //var Dataarray_1 = [Date_input.value, Discription_input.value];
 var Date_inputv;
-var Discription_inputv; 
+var Discription_inputv;
+var Peoples
+
+class People {
+    constructor(Name, Gebiet, Bild_id, Output_id) {
+        this.Name = Name;
+        this.Gebiet = Gebiet;
+        this.Bild_id = Bild_id;
+        this.Output_id = Output_id;
+        this.HTMLcode = '< fieldset id = "fieldset" > < img id = "profile_pic" src = "profile_pic.png"; /> < h1 id = "Titel" > Name</h1 > <br /> <p class="Text Position">Position</p></fieldset >';
+    }
+
+
+}
 
 class Store_Data {
     constructor(Name, Output_id) {
@@ -11,8 +24,8 @@ class Store_Data {
 
         this.Output_id = Output_id;
     }
-    
-    
+
+
     Upload_data(data1, data2) {
         console.log(this.Name);
         const Data1 = data1;
@@ -31,12 +44,12 @@ class Store_Data {
             }
             console.log(new_Dataarray);
             localStorage.setItem(MyName, JSON.stringify(new_Dataarray));
-             location.reload();
+            location.reload();
             console.log(JSON.stringify(new_Dataarray));
             console.log("OK2");
         }
-        
-        
+
+
     }
     write_data() {
         var retrievedObject = localStorage.getItem(this.Name);
@@ -74,14 +87,28 @@ function Upload_Data(input_id) {
         case 'Input_BTN':
             console.log("OK1");
             console.log(Date_inputv + " : " + Discription_inputv);
-            
+
             Aufgaben.Upload_data(Date_inputv, Discription_inputv);
             break;
     }
 }
 
 function write_all() {
+
+    Peoples = [new People('Anna', 'Suchtprobleme', 'profile_pic', 'Chatfield'),
+    new People('Tom', 'Steuern', 'profile_pic', 'Chatfield'),
+    new People('Felix', 'Versicherungen', 'profile_pic', ' Chatfield'),
+    new People('Klara', 'Familie', 'profile_pic', 'Chatfield'),
+    new People('Ben', 'Persönlicher Kontakt', 'profile_pic', 'Chatfield')];
+
     Aufgaben.write_data();
+    console.log(Peoples.length);
+    console.log(Peoples);
+    document.getElementById("Chatfield").innerHTML = '< fieldset id = "fieldset" > < img id = "profile_pic" src = "profile_pic.png"; /> < h1 id = "Titel" > Name</h1 > <br /> <p class="Text Position">Position</p></fieldset >';
+    /*
+    for (let i = 0; i < Peoples.length; i++) {
+        document.getElementById(Peoples[i].Output_id).innerHTML = '< fieldset id = "fieldset" > < img id = "profile_pic" src = "profile_pic.png"; /> < h1 id = "Titel" > Name</h1 > <br /> <p class="Text Position">Position</p></fieldset >';
+    }*/
 }
 write_all();
 /*
@@ -133,6 +160,9 @@ function clear_element(num) {
 }
 */
 
+
+
+
 function Notifications_Sort_By_Date() {
     var retrievedObject = localStorage.getItem('Notifications');
     var Old_Notifications = JSON.parse(retrievedObject);
@@ -141,25 +171,25 @@ function Notifications_Sort_By_Date() {
         for (let i = 0; i < Old_Notifications.length; i += 2) {
 
             for (let u = 0; u < Old_Notifications.length; u += 2) {
-                switch(Compare_Dates(Old_Notifications[i + 1], Old_Notifications[u + 1])) {
+                switch (Compare_Dates(Old_Notifications[i + 1], Old_Notifications[u + 1])) {
                     case 0:
                         break;
                     case 1:
-                        
-                       
+
+
 
                         break;
                     case 2:
 
                         break;
 
-                        // Bitte beenden ich bin gerade Brainfucked
+                    // Bitte beenden ich bin gerade Brainfucked
                 }
             }
-            
+
         }
     }
-}  
+}
 
 function Compare_Dates(Date1, Date2) {
     var Tag1 = parseInt(Date1.substring(0, 2), 10);
@@ -168,7 +198,7 @@ function Compare_Dates(Date1, Date2) {
     var Monat1 = parseInt(Date1.substring(3, 5), 10);
     var Monat2 = parseInt(Date2.substring(3, 5), 10);
 
-    var Jahr1 = parseInt(Date1.substring(6, 9), 10); 
+    var Jahr1 = parseInt(Date1.substring(6, 9), 10);
     var Jahr2 = parseInt(Date2.substring(6, 9), 10);
     var ergebins = 0;
     if (Jahr1 == Jahr2) {
@@ -201,18 +231,15 @@ function Compare_Dates(Date1, Date2) {
 
 //divid is a string
 function Add_Header(DivID) {
-	document.getElementById(DivID).innerHTML =
-		`<a href="Aufgaben.html" , class="BTN_big BTN_Aufgaben_inactive"> Aufgaben </a>
-			<a href="Chats.html" , class="BTN_big BTN_Chats_inactive"> Chats </a>
-			<a href="Kalender.html" , class="BTN_big BTN_Kalender_inactive"> Kalender</a>
-
-			<a href="Help.html" , class="BTN_big BTN_Help_inactive"> Help </a>
-			<a href="Profil.html" , class="BTN_big BTN_Profil_inactive"> Profil</a>
-			<a href="Rewards.html" , class="BTN_big BTN_Rewards_inactive"> Rewards</a>`;
-}
-
-function Add_Header_To_Kacheln() {
-	Add_Header("Kacheln");
+    document.getElementById(DivID).innerHTML =
+        `<div id="Menu_bar">
+			<a href="Index.html" , class="BTN_small BTN_Dashboard_inactive"> Dashboard </a>
+			<a href="Aufgaben.html" , class="BTN_small BTN_Aufgaben_active">Aufgaben</a>
+			<a href="Kalender.html" , class="BTN_small BTN_Kalender_inactive"> Kalender</a>
+			<a href="Help.html" , class="BTN_small BTN_Help_inactive"> Help </a>
+			<a href="Profil.html" , class="BTN_small BTN_Profil_inactive"> Profil</a>
+			<a href="Rewards.html" , class="BTN_small BTN_Rewards_inactive"> Profil</a>
+        </div >`;
 }
 
 function Add_Menue_Bar() {
