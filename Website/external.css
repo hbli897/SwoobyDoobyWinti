@@ -188,3 +188,23 @@ body {
     margin-top: 10px;
     width: 28px;
 }
+
+.Spalte {
+    width: 30%;
+    text-align: left;
+    margin: 2px 0;
+}
+#Input_BTN_erledigt {
+    background-color: #3373FF;
+    border: 1px solid #5033FF;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    //font-size: 8px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
