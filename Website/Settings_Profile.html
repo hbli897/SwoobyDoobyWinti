@@ -1,24 +1,69 @@
 ﻿<!DOCTYPE html>
 <html>
-	
-<head>
-    <link rel="stylesheet" type="text/css" href="external.css" />
 
-    <title>Settings_Profile</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="external.css" />
+
+	<title>Settings_Profile</title>
+
+	<style>
+		@keyframes kft {
+			0% {
+				background-color: #469c18;
+			}
+
+			100% {
+				background-color: #6b78e4;
+			}
+		}
+
+		.kftd {
+			width: 100px;
+			height: 100px;
+			background-color: #469c18;
+			animation-name: kft;
+			animation-duration: 1s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}
+	</style>
 </head>
-	
-<body onload="Add_Menue_Bar()">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0, user-scalable=no">
-    <div id="rectangle">
-        <!--<a href="Chats.html" , class="BTN_small BTN_Dashboard"> <img id="Chat_Bubble" src="Chat_Bubble.png" ; /> </a>-->
-        <br />
-        <div id="rectangle_data">
-            <div id="Menu_bar"></div>
-            <br />
-			
-        </div>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+
+<body onload="Add_Menue_Bar(); InitKeyboard()">
+	<meta name="viewport" content="width = device-width, initial-scale=1.0, user-scalable=no">
+	<div id="rectangle">
+		<!--<a href="Chats.html" , class="BTN_small BTN_Dashboard"> <img id="Chat_Bubble" src="Chat_Bubble.png" ; /> </a>-->
+		<br />
+		<div id="rectangle_data">
+			<div id="Menu_bar"></div>
+			<br />
+			<br />
+			<br />
+			<!--animation-->
+			<div class="kftd">
+
+			</div>
+
+		</div>
+	</div>
+	<script>
+		keys = {};//dictionary (kinda)
+		function InitKeyboard() {
+			document.addEventListener('keydown', function (event) { Key_Down_Handler(event); });
+			document.addEventListener('keyup', function (event) { Key_Up_Handler(event); });
+		}
+		function Key_Down_Handler(event) {
+			if (event.code == "ArrowRight") {
+				keys.rigth = true;
+			}
+		}
+		function Key_Up_Handler() {
+			if (event.code == "ArrowRight") {
+				keys.rigth = false;
+			}
+		}
+	</script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
