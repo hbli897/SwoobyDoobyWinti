@@ -242,6 +242,10 @@ function Add_Header(DivID) {
         </div >`;
 }
 
+function Add_Header_To_Kacheln() {
+	Add_Header("Kacheln");
+}
+
 function Add_Menue_Bar() {
 	document.getElementById("Menu_bar").innerHTML =
 		`<a href="Index.html" , class="BTN_small BTN_Dashboard_inactive"> Dashboard </a>
