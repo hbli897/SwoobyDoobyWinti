@@ -210,3 +210,7 @@ function Add_Header(DivID) {
 			<a href="Profil.html" , class="BTN_big BTN_Profil_inactive"> Profil</a>
 			<a href="Rewards.html" , class="BTN_big BTN_Rewards_inactive"> Rewards</a>`;
 }
+
+function Add_Header_To_Kacheln() {
+	Add_Header("Kacheln");
+}
