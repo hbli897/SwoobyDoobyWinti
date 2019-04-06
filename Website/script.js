@@ -223,10 +223,10 @@ function Add_Header_To_Kacheln() {
 
 function Add_Menue_Bar() {
 	document.getElementById("Menu_bar").innerHTML =
-		`<a href="Index.html" , class="BTN_small BTN_Dashboard_inactive"> Dashboard </a>
+		`<a href="Index.html" , class="BTN_small BTN_Dashboard_inactive">Dashboard</a>
 		<a href="Aufgaben.html" , class="BTN_small BTN_Aufgaben_active">Aufgaben</a>
 		<a href="Kalender.html" , class="BTN_small BTN_Kalender_inactive"> Kalender</a>
-		<a href="Help.html" , class="BTN_small BTN_Help_inactive"> Help </a>
-		<a href="Profil.html" , class="BTN_small BTN_Profil_inactive"> Profil</a>
-		<a href="Rewards.html" , class="BTN_small BTN_Rewards_inactive"> Rewards</a>`
+		<a href="Help.html" , class="BTN_small BTN_Help_inactive">Help</a>
+		<a href="Profil.html" , class="BTN_small BTN_Profil_inactive">Profile</a>
+		<a href="Rewards.html" , class="BTN_small BTN_Rewards_inactive">Rewards</a>`
 }

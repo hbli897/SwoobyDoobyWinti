@@ -54,6 +54,7 @@
     height:100px;
     border-radius:50px;
     color:red;
+    background-size:
 }
 
 .BTN_active {
@@ -62,6 +63,10 @@
 
 .BTN_inactive {
     background-color: white;
+}
+
+.Profile_picture {
+    
 }
 
 #rectangle {
@@ -129,9 +134,8 @@
     left: calc(75% - 50px);
     width: 100px;
     height: 100px;
-    border-radius:50px;
+    border-radius: 50px;
     background-color:black;
-    
 }
 
 #profile_pic {
