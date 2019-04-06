@@ -4,9 +4,9 @@ const Output = document.getElementById("Output");
 //var Dataarray_1 = [Date_input.value, Discription_input.value];
 var Date_inputv;
 var Discription_inputv;
-var Peoples
+var People
 
-class People {
+class Person {
     constructor(Name, Gebiet, Bild_id, Output_id) {
         this.Name = Name;
         this.Gebiet = Gebiet;
@@ -95,23 +95,23 @@ function Upload_Data(input_id) {
 
 function write_all() {
 
-    Peoples = [ new People('Ben'    , 'Persoenlicher Kontakt'   , 'profile_pic', 'Chatfield'),
-                new People('Anna'   , 'Suchtprobleme'           , 'profile_pic', 'Chatfield'),
-                new People('Tom'    , 'Steuern'                 , 'profile_pic', 'Chatfield'),
-                new People('Felix'  , 'Versicherungen'          , 'profile_pic', 'Chatfield'),
-                new People('Klara'  , 'Familie'                 , 'profile_pic', 'Chatfield'),
-                new People('Matt'   , 'Nachhilfe'               , 'profile_pic', 'Chatfield'),
-                new People('Bob'    , 'Alles'                   , 'profile_pic', 'Chatfield')];
+    People = [ new Person('Ben'    , 'Persoenlicher Kontakt'   , 'profile_pic', 'Chatfield'),
+                new Person('Anna'   , 'Suchtprobleme'           , 'profile_pic', 'Chatfield'),
+                new Person('Tom'    , 'Steuern'                 , 'profile_pic', 'Chatfield'),
+                new Person('Felix'  , 'Versicherungen'          , 'profile_pic', 'Chatfield'),
+                new Person('Klara'  , 'Familie'                 , 'profile_pic', 'Chatfield'),
+                new Person('Matt'   , 'Nachhilfe'               , 'profile_pic', 'Chatfield'),
+                new Person('Bob'    , 'Alles'                   , 'profile_pic', 'Chatfield')];
 
     Aufgaben.write_data();
-    console.log(Peoples.length);
-    console.log(Peoples);
+    console.log(People.length);
+    console.log(People);
     //document.getElementById("Chatfield").innerHTML += `<fieldset id = "fieldset"> <img id = "profile_pic" src = "profile_pic.png";/> <h1 id = "Titel">Name</h1><br /><p class="Text Position">Position</p></fieldset >`;
 
-    for (let i = 0; i < Peoples.length; i++) {
+    for (let i = 0; i < People.length; i++) {
 
         console.log(i);
-        document.getElementById(Peoples[i].Output_id).innerHTML += `<fieldset id = "fieldset" ><table><tr><th id="thpic"> <img id="profile_pic" src="profile_pic.png" ;/></th><th> <h1 class="h1"> ${Peoples[i].Name}</h1> <br /> <p class="Text">${Peoples[i].Gebiet}</p ></th ></tr ></table ></fieldset >`;
+        document.getElementById(People[i].Output_id).innerHTML += `<fieldset id = "fieldset" ><table><tr><th id="thpic"> <img id="profile_pic" src="profile_pic.png" ;/></th><th> <h1 class="h1"> ${People[i].Name}</h1> <br /> <p class="Text">${People[i].Gebiet}</p ></th ></tr ></table ></fieldset >`;
     }
 }
 write_all();
