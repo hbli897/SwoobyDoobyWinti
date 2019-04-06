@@ -149,7 +149,6 @@ h1 {
     position: fixed;
     width: 80px;
     bottom: 50px;
-    
     right: 40px;
 }
 
@@ -161,5 +160,6 @@ h1 {
     height: 50px;
     border-radius:25px;
     background-color:black;
+   
     
 }
