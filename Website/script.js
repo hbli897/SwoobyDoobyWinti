@@ -255,6 +255,6 @@ function Add_Menue_Bar() {
 		<a href="Aufgaben.html" , class="BTN_small BTN_Aufgaben_active">Aufgaben</a>
 		<a href="Kalender.html" , class="BTN_small BTN_Kalender_inactive"> Kalender</a>
 		<a href="Help.html" , class="BTN_small BTN_Help_inactive">Help</a>
-		<a href="Profil.html" , class="BTN_small BTN_Profil_inactive"><img src="Pictures\Profile.png" alt="Profile" height="50" width="50" /></i></a>
+		<a href="Profil.html" , class="BTN_small BTN_Profil_inactive">Profile</a>
 		<a href="Rewards.html" , class="BTN_small BTN_Rewards_inactive">Rewards</a>`
 }
