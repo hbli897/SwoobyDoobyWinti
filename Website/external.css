@@ -144,3 +144,17 @@
     border-radius: 8px;
     background-color: #cfcfcf;
 }
+.MY_STD_BTN {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid #2d692f;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
