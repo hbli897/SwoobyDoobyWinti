@@ -251,10 +251,10 @@ function Add_Header_To_Kacheln() {
 
 function Add_Menue_Bar() {
     document.getElementById("Menu_bar").innerHTML =
-        `<a href="Index.html" , class="BTN_small "><img id="ICON" src="Dashboard.png" ; /></a>
-		<a href="Aufgaben.html" , class="BTN_small "><img id="ICON" src="Aufgabe.png" ; /></a>
-		<a href="Kalender.html" , class="BTN_small "><img id="ICON" src="Kalender.png" ; /></a>
-		<a href="Help.html" , class="BTN_small "> <img id="ICON" src="Help.png" ; /></a>
-		<a href="Profil.html" , class="BTN_small "> <img id="ICON" src="Profil.png" ; /></a>
-		<a href="Rewards.html" , class="BTN_small "><img id="ICON" src="Rewards.png" ; /></a>`
+        `<a href="Index.html" , class="BTN_small "><img id="ICON" src="Pictures/Dashboard.png" ; /></a>
+		<a href="Aufgaben.html" , class="BTN_small "><img id="ICON" src="Pictures/Aufgabe.png" ; /></a>
+		<a href="Kalender.html" , class="BTN_small "><img id="ICON" src="Pictures/Kalender.png" ; /></a>
+		<a href="Help.html" , class="BTN_small "> <img id="ICON" src="Pictures/Help.png" ; /></a>
+		<a href="Profil.html" , class="BTN_small "> <img id="ICON" src="Pictures/Profil.png" ; /></a>
+		<a href="Rewards.html" , class="BTN_small "><img id="ICON" src="Pictures/Rewards.png" ; /></a>`
 }
