@@ -138,6 +138,15 @@ body {
     right: 40px;
 }
 
+#Profile_Picture {
+    Position: relative;
+    width: 100px;
+    height: 100px;
+    top:auto;
+    left:260px;
+    border-radius: 50px;
+}
+
 #Profile_Picture_circle {
     position: relative;
     top: auto;
