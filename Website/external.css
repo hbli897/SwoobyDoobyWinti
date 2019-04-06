@@ -57,12 +57,6 @@
     border-radius:50px;
     color:red;
 }
-.BTN_Aufgaben_active {
-    background-color: #9a9a9a;
-}
-.BTN_Aufgaben_inactive {
-    background-color: #ff6666;
-}
 
 .BTN_active {
     background-color: aquamarine;
