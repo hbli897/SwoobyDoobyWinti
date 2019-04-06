@@ -100,7 +100,7 @@ h1 {
     background-color: #b6ff00;
 }
 .BTN_Settings_Profile {
-    background-color:red;
+    background-size: cover;
 }
 
 
@@ -170,4 +170,5 @@ h1 {
     height: 100px;
     border-radius:50px;
     background-color:black;
+    
 }
