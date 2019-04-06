@@ -1,0 +1,181 @@
+body {
+    background-color: #A9CCE3;
+}
+
+.h1 {
+    text-align: left;
+    /*display: inline-block;*/
+    float: left;
+    font-family: Consolas;
+    text-decoration: none;
+    margin: 2px 0;
+    padding-right: 50%;
+    /*padding: 0.5em 1em;*/
+    color: #000000;
+}
+
+.Text {
+    float: left;
+    font-family: Consolas;
+    font-size: large;
+    margin: 2px 0;
+    /*padding-right: 50%;*/
+}
+
+#thpic {
+    width: 70px;
+}
+
+.BTN_big {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+    /*border-radius: 4px;*/
+    width: 80px;
+    height: 80px;
+    /*padding: 0.5em 1em*/;
+    color: #000000;
+    border: 3px solid black;
+}
+
+.BTN_small {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    /*padding: 0.5em 1em;*/
+    color: #000000;
+    border: 1px solid #229954;
+    background-color: #2ECC71;
+}
+
+    .BTN_small:hover {
+        background-color: #27AE60;
+    }
+
+.BTN_Circle {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    color: red;
+    background-size:
+}
+
+.BTN_active {
+}
+
+.BTN_inactive {
+}
+
+.Profile_picture {
+}
+
+#rectangle {
+    margin: auto;
+    width: auto;
+    height: auto;
+    /* border-radius: 10px;*/
+    /*background-color: #9b9b9b;*/
+    padding: 10px;
+    padding-bottom: 50px;
+    display: block;
+}
+
+#Menu_bar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #5DADE2;
+    /*padding: 4px;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 4px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Kacheln {
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+#Inputdate {
+    padding: 7px;
+    height: 40px;
+}
+
+#Inputdisc {
+    padding: 7px;
+    height: 40px;
+}
+
+#Input_BTN {
+}
+
+#Output_Aufgaben {
+    font-family: Calibri;
+    font-size: larger;
+}
+
+#Output_Aktuell {
+    font-family: Calibri;
+    font-size: larger;
+}
+
+#Chat_Bubble {
+    position: fixed;
+    width: 80px;
+    bottom: 50px;
+    right: 40px;
+}
+
+#Profile_Picture_circle {
+    position: relative;
+    top: auto;
+    left: calc(75% - 50px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    /*background-color:black;*/
+}
+
+#profile_pic {
+    width: 50px;
+    float: left;
+}
+
+#fieldset {
+    border: solid 2px #2a2a2a;
+    margin: 2px;
+    border-radius: 8px;
+    background-color: #717D7E;
+}
+
+.MY_STD_BTN {
+    background-color: #3373FF;
+    border: 1px solid #5033FF;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#ICON {
+    margin-top: 10px;
+    width: 28px;
+}

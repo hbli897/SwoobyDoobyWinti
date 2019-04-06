@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="external.css" />
+
+    <title>Dashboard</title>
+</head>
+<body onload="Add_Menue_Bar()">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0, user-scalable=no">
+    <div id="rectangle">
+        <a href="Chats.html" , id="Chat_Bubble"> <img id="Chat_Bubble" src="Pictures/Chat_Bubble.png" ; /> </a>
+        <br />
+		<div id="rectangle_data">
+			<div id="Menu_bar">
+			</div>
+			<br />
+			<br />
+			<br />
+			<input id="points" type="number" placeholder="1" />
+			<button onclick="Add_Points()">add</button>
+			<script>
+				function Add_Points() {
+					var points = parseInt(document.getElementById("points").innerText);
+					console.log(points);
+					document.getElementById("points text").innerHTML =
+						toString(parseInt(document.getElementById("points text").innerText) + points);
+				}
+			</script>
+			<p id="points text">0</p>
+		</div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
