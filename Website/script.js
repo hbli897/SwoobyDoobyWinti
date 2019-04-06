@@ -95,11 +95,13 @@ function Upload_Data(input_id) {
 
 function write_all() {
 
-    Peoples = [ new People('Anna'   , 'Suchtprobleme'       , 'profile_pic', 'Chatfield'),
+    Peoples = [ new People('Ben'    , 'Persönlicher Kontakt', 'profile_pic', 'Chatfield'),
+                new People('Anna'   , 'Suchtprobleme'       , 'profile_pic', 'Chatfield'),
                 new People('Tom'    , 'Steuern'             , 'profile_pic', 'Chatfield'),
                 new People('Felix'  , 'Versicherungen'      , 'profile_pic', 'Chatfield'),
                 new People('Klara'  , 'Familie'             , 'profile_pic', 'Chatfield'),
-                new People('Ben'    , 'Persönlicher Kontakt', 'profile_pic', 'Chatfield')];
+                new People('Matt'   , 'Nachhilfe'           , 'profile_pic', 'Chatfield'),
+                new People('Bob'    , 'Alles'               , 'profile_pic', 'Chatfield')];
 
     Aufgaben.write_data();
     console.log(Peoples.length);
@@ -109,7 +111,7 @@ function write_all() {
     for (let i = 0; i < Peoples.length; i++) {
 
         console.log(i);
-        document.getElementById(Peoples[i].Output_id).innerHTML += `<fieldset id = "fieldset"> <img id = "profile_pic" src = "profile_pic.png";/> <h1 id = "Titel">${Peoples[i].Name}</h1><br /><p class="Text Position">${Peoples[i].Gebiet}</p></fieldset >`;
+        document.getElementById(Peoples[i].Output_id).innerHTML += `<fieldset id = "fieldset" ><table><tr><th id="thpic"> <img id="profile_pic" src="profile_pic.png" ;/></th><th> <h1 class="h1"> ${Peoples[i].Name}</h1> <br /> <p class="Text">${Peoples[i].Gebiet}</p ></th ></tr ></table ></fieldset >`;
     }
 }
 write_all();
