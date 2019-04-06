@@ -76,9 +76,6 @@ input {
 .BTN_inactive {
 }
 
-.Profile_picture {
-}
-
 #rectangle {
     margin: auto;
     width: auto;
@@ -142,7 +139,7 @@ input {
     right: 40px;
 }
 
-#Profile_Picture {
+.Profile_Picture {
     Position: relative;
     width: 100px;
     height: 100px;
