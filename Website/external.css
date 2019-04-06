@@ -1,15 +1,27 @@
 h1 {
-    text-align: center;
+    /*text-align: center;*/
     /*display: inline-block;*/
+    float: right;
     font-family: Consolas;
     text-decoration: none;
     margin: 2px 0;
-    padding: 0.5em 1em;
+    padding-right: 50%;
+    /*padding: 0.5em 1em;*/
     color: #000000;
 }
-#Text {
+
+.Text {
+    float: right;
     font-family: Consolas;
     font-size: large;
+    margin: 2px 0;
+    padding-right: 50%;
+}
+
+.Position {
+    position: relative;
+    top: -30px;
+    left: 10px;
 }
 
 
@@ -172,3 +184,21 @@ h1 {
     background-color:black;
     
 }
+
+#profile_pic {
+    width: 50px;
+}
+
+#fieldset {
+    border: solid 2px #2a2a2a;
+    border-radius: 8px;
+    background-color: #cfcfcf ======= #Profile_Picture_circle
+
+{
+    position: relative;
+    top: auto;
+    left: calc(75% - 50px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: black;
