@@ -43,7 +43,7 @@ h1 {
     width:100px;
     height:100px;
     border-radius:50px;
-    color:transparent;
+    color:red;
 }
 .BTN_Aufgaben_active {
     background-color: #9a9a9a;
@@ -100,7 +100,7 @@ h1 {
     background-color: #b6ff00;
 }
 .BTN_Settings_Profile {
-    background-color:transparent;
+    background-color:red;
 }
 
 
