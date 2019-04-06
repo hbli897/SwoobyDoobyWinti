@@ -191,14 +191,7 @@ h1 {
 
 #fieldset {
     border: solid 2px #2a2a2a;
+    margin: 2px;
     border-radius: 8px;
-    background-color: #cfcfcf ======= #Profile_Picture_circle
-
-{
-    position: relative;
-    top: auto;
-    left: calc(75% - 50px);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: black;
+    background-color: #cfcfcf;
+}
