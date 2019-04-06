@@ -104,11 +104,11 @@ function write_all() {
     Aufgaben.write_data();
     console.log(Peoples.length);
     console.log(Peoples);
-    document.getElementById("Chatfield").innerHTML += `<fieldset id = "fieldset"> <img id = "profile_pic" src = "profile_pic.png";/> <h1 id = "Titel">Name</h1><br /><p class="Text Position">Position</p></fieldset >`;
-    /*
+    //document.getElementById("Chatfield").innerHTML += `<fieldset id = "fieldset"> <img id = "profile_pic" src = "profile_pic.png";/> <h1 id = "Titel">Name</h1><br /><p class="Text Position">Position</p></fieldset >`;
+    
     for (let i = 0; i < Peoples.length; i++) {
-        document.getElementById(Peoples[i].Output_id).innerHTML = '< fieldset id = "fieldset" > < img id = "profile_pic" src = "profile_pic.png"; /> < h1 id = "Titel" > Name</h1 > <br /> <p class="Text Position">Position</p></fieldset >';
-    }*/
+        document.getElementById(Peoples[i].Output_id).innerHTML += `<fieldset id = "fieldset"> <img id = "profile_pic" src = "profile_pic.png";/> <h1 id = "Titel">Name</h1><br /><p class="Text Position">Position</p></fieldset >`;
+    }
 }
 write_all();
 /*
