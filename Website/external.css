@@ -68,7 +68,6 @@ input {
     height: 100px;
     border-radius: 50px;
     color: red;
-    background-size:
 }
 
 .BTN_active {
@@ -136,7 +135,7 @@ input {
     font-size: larger;
 }
 
-#Chat_Bubble {
+.Chat_Bubble {
     position: fixed;
     width: 80px;
     bottom: 50px;
