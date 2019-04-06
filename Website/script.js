@@ -43,7 +43,7 @@ class Store_Data {
         var Old_Notifications = JSON.parse(retrievedObject);
         if (Old_Notifications) {
             for (let i = 0; i < Old_Notifications.length; i += 2) {
-                document.getElementById(this.Output_id).innerHTML += `${Old_Notifications[i + 1]}: ${Old_Notifications[i]} <button type="button" id="Input_BTN_erledigt" onclick="Aufgaben.clear_Element(${i})">Erledigt</button><br \>`;
+                document.getElementById(this.Output_id).innerHTML += `${Old_Notifications[i + 1]}: ${Old_Notifications[i]} <button type="button" id="Input_BTN_erledigt" onclick="${this.Name}.clear_Element(${i})">Erledigt</button><br \>`;
             }
         }
     }
@@ -62,7 +62,9 @@ class Store_Data {
 
 
 }
-let Aufgaben = new Store_Data('Aufgaben' , 'Output_Aufgaben');
+
+let Aufgaben = new Store_Data('Aufgaben', 'Output_Aufgaben');
+let Aktuell = new Store_Data('Aktuell', 'Output_Aktuell');
 
 function Upload_Data(input_id) {
     Date_inputv = document.getElementById("Inputdate").value;

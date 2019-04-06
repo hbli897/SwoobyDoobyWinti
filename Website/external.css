@@ -33,35 +33,66 @@ h1 {
     margin: 0px;
    /* border: solid 1px transparent;*/
     /*border-radius: 4px;*/
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 0.5em 1em;
     color: #000000;
 }
-.BTN_Aufgaben {
+.BTN_Aufgaben_active {
+    background-color: #9a9a9a;
+}
+.BTN_Aufgaben_inactive {
     background-color: #ff6666;
 }
-.BTN_Chats {
+
+.BTN_Chats_active {
+    background-color: #9a9a9a;
+}
+.BTN_Chats_inactive {
     background-color: #ff6a00;
 }
-.BTN_Kalender {
+
+.BTN_Kalender_active {
+    background-color: #9a9a9a;
+}
+.BTN_Kalender_inactive {
     background-color: #4800ff;
 }
-.BTN_Help {
+
+.BTN_Help_active {
+    background-color: #9a9a9a;
+}
+.BTN_Help_inactive {
     background-color: #4cff00;
 }
-.BTN_Index {
+
+.BTN_Index_active {
+    background-color: #9a9a9a;
+}
+.BTN_Index_inactive {
     background-color: #00ff21;
 }
-.BTN_Profil {
+
+.BTN_Profil_active {
+    background-color: #9a9a9a;
+}
+.BTN_Profil_inactive {
     background-color: #0094ff;
 }
-.BTN_Dashboard {
+
+.BTN_Dashboard_active {
+    background-color: #9a9a9a
+}
+.BTN_Dashboard_inactive {
     background-color: #ff49e6
 }
-.BTN_Rewards {
+.BTN_Rewards_active {
+    background-color: #9a9a9a;
+}
+.BTN_Rewards_inactive {
     background-color: #b6ff00;
 }
+
 
 
 #rectangle {
@@ -108,4 +139,16 @@ h1 {
 #Output_Aufgaben {
     font-family: Calibri;
     font-size:larger;
+}
+#Output_Aktuell {
+    font-family: Calibri;
+    font-size: larger;
+}
+
+#Chat_Bubble {
+    position: fixed;
+    width: 80px;
+    bottom: 50px;
+    
+    right: 40px;
 }
