@@ -104,7 +104,7 @@ function write_all() {
     Aufgaben.write_data();
     console.log(Peoples.length);
     console.log(Peoples);
-    document.getElementById("Chatfield").innerHTML = '< fieldset id = "fieldset" > < img id = "profile_pic" src = "profile_pic.png"; /> < h1 id = "Titel" > Name</h1 > <br /> <p class="Text Position">Position</p></fieldset >';
+    document.getElementById("Chatfield").innerHTML += `<fieldset id = "fieldset"> <img id = "profile_pic" src = "profile_pic.png";/> <h1 id = "Titel">Name</h1><br /><p class="Text Position">Position</p></fieldset >`;
     /*
     for (let i = 0; i < Peoples.length; i++) {
         document.getElementById(Peoples[i].Output_id).innerHTML = '< fieldset id = "fieldset" > < img id = "profile_pic" src = "profile_pic.png"; /> < h1 id = "Titel" > Name</h1 > <br /> <p class="Text Position">Position</p></fieldset >';
@@ -232,14 +232,13 @@ function Compare_Dates(Date1, Date2) {
 //divid is a string
 function Add_Header(DivID) {
     document.getElementById(DivID).innerHTML =
-        `<div id="Menu_bar">
-			<a href="Index.html" , class="BTN_small BTN_Dashboard_inactive"> Dashboard </a>
-			<a href="Aufgaben.html" , class="BTN_small BTN_Aufgaben_active">Aufgaben</a>
-			<a href="Kalender.html" , class="BTN_small BTN_Kalender_inactive"> Kalender</a>
-			<a href="Help.html" , class="BTN_small BTN_Help_inactive"> Help </a>
-			<a href="Profil.html" , class="BTN_small BTN_Profil_inactive"> Profil</a>
-			<a href="Rewards.html" , class="BTN_small BTN_Rewards_inactive"> Profil</a>
-        </div >`;
+        `<a href="Aufgaben.html" , class="BTN_big BTN_Aufgaben_inactive"> Aufgaben </a>
+            <a href="Chats.html" , class="BTN_big BTN_Chats_inactive"> Chats </a>
+            <a href="Kalender.html" , class="BTN_big BTN_Kalender_inactive"> Kalender</a>
+
+            <a href="Help.html" , class="BTN_big BTN_Help_inactive"> Help </a>
+            <a href="Profil.html" , class="BTN_big BTN_Profil_inactive"> Profil</a>
+            <a href="Rewards.html" , class="BTN_big BTN_Rewards_inactive"> Rewards</a>`;
 }
 
 function Add_Header_To_Kacheln() {
