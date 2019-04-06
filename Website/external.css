@@ -12,32 +12,32 @@ h1 {
     font-size: large;
 }
 
-
-
 .BTN_big {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    /* margin: 2px 0;*/
-    border: solid 1px transparent;
+    margin: 2px;
     /*border-radius: 4px;*/
-    width: 30%;
-    height: 50px;
-    /*padding: 0.5em 1em;*/
+    width: 80px;
+    height: 80px;
+    /*padding: 0.5em 1em*/;
     color: #000000;
+    border: 3px solid black;
 }
+
 .BTN_small {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    margin: 0;
-   /* border: solid 1px transparent;*/
+    margin: 1px;
     /*border-radius: 4px;*/
-    width: 25px;
+    width: 5%;
     height: 25px;
     padding: 0.5em 1em;
     color: #000000;
+    border: 1px solid black;
 }
+
 .BTN_Circle {
     display:flex;
     width:100px;
@@ -52,82 +52,39 @@ h1 {
     background-color: #ff6666;
 }
 
-.BTN_Chats_active {
-    background-color: #9a9a9a;
-}
-.BTN_Chats_inactive {
-    background-color: #ff6a00;
+.BTN_active {
+    background-color: aquamarine;
 }
 
-.BTN_Kalender_active {
-    background-color: #9a9a9a;
+.BTN_inactive {
+    background-color: white;
 }
-.BTN_Kalender_inactive {
-    background-color: #4800ff;
-}
-
-.BTN_Help_active {
-    background-color: #9a9a9a;
-}
-.BTN_Help_inactive {
-    background-color: #4cff00;
-}
-
-.BTN_Index_active {
-    background-color: #9a9a9a;
-}
-.BTN_Index_inactive {
-    background-color: #00ff21;
-}
-
-.BTN_Profil_active {
-    background-color: #9a9a9a;
-}
-.BTN_Profil_inactive {
-    background-color: #0094ff;
-}
-
-.BTN_Dashboard_active {
-    background-color: #9a9a9a
-}
-.BTN_Dashboard_inactive {
-    background-color: #ff49e6
-}
-.BTN_Rewards_active {
-    background-color: #9a9a9a;
-}
-.BTN_Rewards_inactive {
-    background-color: #b6ff00;
-}
-.BTN_Settings_Profile {
-    background-size: cover;
-}
-
-
 
 #rectangle {
-    margin: 0 auto;
-    border-radius: 10px;
+    margin: auto;
     width: auto;
     height: auto;
+    border-radius: 10px;
     background-color: #9b9b9b;
     padding: 10px;
     padding-bottom: 50px;
+    display: block;
 }
 
 #Menu_bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.50);
+    /*position: fixed;*/
+    /*top: 0;
+    left: 0px;
+    right: 0px;*/
+    background-color: white;
     /*padding: 4px;*/
-    border: solid 1px transparent;
+    border: 1px solid black;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    /*align-items: center;
+    justify-content: center;*/
 }
+
 #Kacheln {
 
     /*display: flex;*/
