@@ -55,9 +55,11 @@ class Store_Data {
         var retrievedObject = localStorage.getItem(this.Name);
         var Old_Notifications = JSON.parse(retrievedObject);
         if (Old_Notifications) {
+            document.getElementById(this.Output_id).innerHTML +=`<table><thead><tr><th class="Spalte">Datum</th><th class="Spalte">Beschreibung</th><th class="Spalte"> abgeschlossen?</th></tr></thead>`
             for (let i = 0; i < Old_Notifications.length; i += 2) {
-                document.getElementById(this.Output_id).innerHTML += `${Old_Notifications[i + 1]}: ${Old_Notifications[i]} <button type="button" id="Input_BTN_erledigt" onclick="${this.Name}.clear_Element(${i})">Erledigt</button><br \>`;
+                document.getElementById(this.Output_id).innerHTML += `<table><tr><th class="Spalte"> ${Old_Notifications[i]}</th><th class="Spalte"> ${Old_Notifications[i + 1]}</th><th class="Spalte"> <button type="button" id="Input_BTN_erledigt" onclick="${this.Name}.clear_Element(${i})">Erledigt</button></th></tr></table>`;
             }
+            document.getElementById(this.Output_id).innerHTML += `</table>`;
         }
     }
     clear_Element(num) {
