@@ -142,8 +142,8 @@ body {
     Position: relative;
     width: 100px;
     height: 100px;
-    top:auto;
-    left:260px;
+    top: 50px;
+    left:50px;
     border-radius: 50px;
 }
 
