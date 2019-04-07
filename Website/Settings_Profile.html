@@ -43,6 +43,8 @@
 			<br />
 			<br />
 			<input type="number" name="speed" value="4" id="speed" />
+			<p id="x"></p>
+			<p id="y"></p>
 			<!--animation-->
 			<div class="kftd" id="player">
 			</div>
@@ -66,6 +68,7 @@
 			if (keys.ArrowUp) {
 				pos.y -= parseFloat(document.getElementById("speed").value);
 				document.getElementById("player").style.top = pos.y + 'px';
+				
 			}
 			if (keys.ArrowDown) {
 				pos.y += parseFloat(document.getElementById("speed").value);
@@ -79,6 +82,8 @@
 				pos.x += parseFloat(document.getElementById("speed").value);
 				document.getElementById("player").style.left = pos.x + 'px';
 			}
+			document.getElementById("x").innerText = pos.x + 'px';
+			document.getElementById("y").innerText = pos.y + 'px';
 		}
 
 	</script>
