@@ -97,13 +97,13 @@ function Upload_Data(input_id) {
 
 function write_all() {
 
-    People = [  new Person('Ben'    , 'Persoenlicher Kontakt'   , 'Pictures/profile_pic', 'Chatfield'),
-                new Person('Anna'   , 'Suchtprobleme'           , 'Pictures/profile_pic', 'Chatfield'),
-                new Person('Tom'    , 'Steuern'                 , 'Pictures/profile_pic', 'Chatfield'),
-                new Person('Felix'  , 'Versicherungen'          , 'Pictures/profile_pic', 'Chatfield'),
-                new Person('Klara'  , 'Familie'                 , 'Pictures/profile_pic', 'Chatfield'),
-                new Person('Matt'   , 'Nachhilfe'               , 'Pictures/profile_pic', 'Chatfield'),
-                new Person('Bob'    , 'Alles'                   , 'Pictures/profile_pic', 'Chatfield')];
+    People = [  new Person('Ben'    , 'Persoenlicher Kontakt'   , 'profile_pic', 'Chatfield'),
+                new Person('Anna'   , 'Suchtprobleme'           , 'profile_pic', 'Chatfield'),
+                new Person('Tom'    , 'Steuern'                 , 'profile_pic', 'Chatfield'),
+                new Person('Felix'  , 'Versicherungen'          , 'profile_pic', 'Chatfield'),
+                new Person('Klara'  , 'Familie'                 , 'profile_pic', 'Chatfield'),
+                new Person('Matt'   , 'Nachhilfe'               , 'profile_pic', 'Chatfield'),
+                new Person('Bob'    , 'Alles'                   , 'profile_pic', 'Chatfield')];
 
     Aufgaben.write_data();
     console.log(People.length);
