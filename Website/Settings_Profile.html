@@ -1,24 +1,93 @@
 ﻿<!DOCTYPE html>
 <html>
-	
-<head>
-    <link rel="stylesheet" type="text/css" href="external.css" />
 
-    <title>Settings_Profile</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="external.css" />
+
+	<title>Settings_Profile</title>
+
+	<style>
+		@keyframes kft {
+			0% {
+				background-color: #469c18;
+				width: 80px;
+				height: 100px;
+			}
+
+			100% {
+				background-color: #6b78e4;
+				width: 100px;
+				height: 80px;
+			}
+		}
+
+		.kftd {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			background-color: #469c18;
+			animation-name: kft;
+			animation-duration: 1s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}
+
+	</style>
 </head>
-	
-<body onload="Add_Menue_Bar()">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0, user-scalable=no">
-    <div id="rectangle">
-        <!--<a href="Chats.html" , class="BTN_small BTN_Dashboard"> <img id="Chat_Bubble" src="Chat_Bubble.png" ; /> </a>-->
-        <br />
-        <div id="rectangle_data">
-            <div id="Menu_bar"></div>
-            <br />
-			
-        </div>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+
+<body onload="Add_Menue_Bar(); InitKeyboard()">
+	<meta name="viewport" content="width = device-width, initial-scale=1.0, user-scalable=no">
+	<div id="rectangle">
+		<!--<a href="Chats.html" , class="BTN_small BTN_Dashboard"> <img id="Chat_Bubble" src="Chat_Bubble.png" ; /> </a>-->
+		<br />
+		<div id="rectangle_data">
+			<div id="Menu_bar"></div>
+			<br />
+			<br />
+			<br />
+			<input type="number" name="speed" value="4" id="speed" />
+			<!--animation-->
+
+			<div class="kftd" id="player">
+
+			</div>
+
+		</div>
+	</div>
+	<script>
+		var keys = {};//dictionary (kinda)
+		var pos = { x: 0, y: 0 };
+		function InitKeyboard() {
+			document.addEventListener('keydown', function (event) { Key_Down_Handler(event); });
+			document.addEventListener('keyup', function (event) { Key_Up_Handler(event); });
+			window.setInterval(Update, 1000 / 60);
+		}
+		function Key_Down_Handler(event) {
+			keys[event.code] = true;
+		}
+		function Key_Up_Handler() {
+			keys[event.code] = false;
+		}
+		function Update() {
+			if (keys.ArrowUp) {
+				pos.y -= parseFloat(document.getElementById("speed").value);
+				document.getElementById("player").style.top = pos.y + 'px';
+			}
+			if (keys.ArrowDown) {
+				pos.y += parseFloat(document.getElementById("speed").value);
+				document.getElementById("player").style.top = pos.y + 'px';
+			}
+			if (keys.ArrowLeft) {
+				pos.x -= parseFloat(document.getElementById("speed").value);
+				document.getElementById("player").style.left = pos.x + 'px';
+			}
+			if (keys.ArrowRight) {
+				pos.x += parseFloat(document.getElementById("speed").value);
+				document.getElementById("player").style.left = pos.x + 'px';
+			}
+		}
+	</script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
