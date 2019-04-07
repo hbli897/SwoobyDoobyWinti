@@ -54,12 +54,26 @@ class Store_Data {
     write_data() {
         var retrievedObject = localStorage.getItem(this.Name);
         var Old_Notifications = JSON.parse(retrievedObject);
+        var Output_String;
+
         if (Old_Notifications) {
-            document.getElementById(this.Output_id).innerHTML +=`<table><thead><tr><th class="Spalte">Datum</th><th class="Spalte">Beschreibung</th><th class="Spalte"> abgeschlossen?</th></tr></thead>`
+            Output_String ='<table><thead><tr><th class="Spalte">Datum</th><th class="Spalte">Beschreibung</th><th class="Spalte"> abgeschlossen?</th></tr></thead>'
             for (let i = 0; i < Old_Notifications.length; i += 2) {
-                document.getElementById(this.Output_id).innerHTML += `<table><tr><th class="Spalte"> ${Old_Notifications[i]}</th><th class="Spalte"> ${Old_Notifications[i + 1]}</th><th class="Spalte"> <button type="button" id="Input_BTN_erledigt" onclick="${this.Name}.clear_Element(${i})">Erledigt</button></th></tr></table>`;
+                Output_String += '<tr><th class="Spalte">';
+                Output_String += Old_Notifications[i];
+                Output_String += '</th><th class="Spalte">';
+                Output_String += Old_Notifications[i + 1];
+                Output_String += '</th><th class="Spalte"> <button type="button" id="Input_BTN_erledigt" onclick="';
+                Output_String += this.Name;
+                Output_String += '.clear_Element(';
+                Output_String += i;
+                Output_String += ')">Erledigt</button></th></tr>';
             }
-            document.getElementById(this.Output_id).innerHTML += `</table>`;
+            Output_String += '</table>';
+            if (Output_String) {
+                document.getElementById("Output_Aufgaben").innerHTML = Output_String;
+            }
+            
         }
     }
     clear_Element(num) {
@@ -95,7 +109,7 @@ function Upload_Data(input_id) {
     }
 }
 
-function write_all() {
+function  write_all() {
 
     People = [  new Person('Ben'    , 'Persoenlicher Kontakt'   , 'profile_pic', 'Chatfield'),
                 new Person('Anna'   , 'Suchtprobleme'           , 'profile_pic', 'Chatfield'),
@@ -109,14 +123,16 @@ function write_all() {
     console.log(People.length);
     console.log(People);
     //document.getElementById("Chatfield").innerHTML += `<fieldset id = "fieldset"> <img id = "profile_pic" src = "profile_pic.png";/> <h1 id = "Titel">Name</h1><br /><p class="Text Position">Position</p></fieldset >`;
-
+    var Output_String;
     for (let i = 0; i < People.length; i++) {
 
         console.log(i);
-        document.getElementById(People[i].Output_id).innerHTML += `<fieldset id = "fieldset" ><table><tr><th id="thpic"> <img id="profile_pic" src="profile_pic.png" ;/></th><th> <h1 class="h1"> ${People[i].Name}</h1> <br /> <p class="Text">${People[i].Gebiet}</p ></th ></tr ></table ></fieldset >`;
+        Output_String += `<fieldset id = "fieldset" ><table><tr><th id="thpic"> <img id="profile_pic" src="profile_pic.png" ;/></th><th> <h1 class="h1"> ${People[i].Name}</h1> <br /> <p class="Text">${People[i].Gebiet}</p ></th ></tr ></table ></fieldset >`
+        
     }
+    document.getElementById("Chatfield").innerHTML = Output_String;
 }
-write_all();
+
 /*
 function Upload_data() {
 
