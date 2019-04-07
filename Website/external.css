@@ -36,7 +36,7 @@ input {
     text-align: center;
     text-decoration: none;
     margin: 2px;
-    /*border-radius: 4px;*/
+    border-radius: 4px;
     width: 80px;
     height: 80px;
     /*padding: 0.5em 1em*/;
@@ -71,20 +71,24 @@ input {
 }
 
 .BTN_active {
+	background-color: aquamarine;
 }
 
 .BTN_inactive {
+	background-color: white;
 }
 
 #rectangle {
-    margin: auto;
-    width: auto;
-    height: auto;
-    /* border-radius: 10px;*/
-    /*background-color: #9b9b9b;*/
-    padding: 10px;
-    padding-bottom: 50px;
-    display: block;
+/*    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    display: fixed;
+    align-items: center;
+    justify-content: center;*/
 }
 
 #Menu_bar {
@@ -95,16 +99,19 @@ input {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #5DADE2;
-    /*padding: 4px;*/
-    /*border: 1px solid black;*/
-    /*border-radius: 4px;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#Kacheln {
-    /*display: flex;*/
+.Kacheln {
+	position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
