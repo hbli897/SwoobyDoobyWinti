@@ -54,12 +54,15 @@ class Store_Data {
     write_data() {
         var retrievedObject = localStorage.getItem(this.Name);
         var Old_Notifications = JSON.parse(retrievedObject);
+        var Output_String;
+
         if (Old_Notifications) {
-            document.getElementById(this.Output_id).innerHTML +=`<table><thead><tr><th class="Spalte">Datum</th><th class="Spalte">Beschreibung</th><th class="Spalte"> abgeschlossen?</th></tr></thead>`
+            Output_String =`<table><thead><tr><th class="Spalte">Datum</th><th class="Spalte">Beschreibung</th><th class="Spalte"> abgeschlossen?</th></tr></thead>`
             for (let i = 0; i < Old_Notifications.length; i += 2) {
-                document.getElementById(this.Output_id).innerHTML += `<table><tr><th class="Spalte"> ${Old_Notifications[i]}</th><th class="Spalte"> ${Old_Notifications[i + 1]}</th><th class="Spalte"> <button type="button" id="Input_BTN_erledigt" onclick="${this.Name}.clear_Element(${i})">Erledigt</button></th></tr></table>`;
+                Output_String += `<tr><th class="Spalte"> ${Old_Notifications[i]}</th><th class="Spalte"> ${Old_Notifications[i + 1]}</th><th class="Spalte"> <button type="button" id="Input_BTN_erledigt" onclick="${this.Name}.clear_Element(${i})">Erledigt</button></th></tr>`;
             }
-            document.getElementById(this.Output_id).innerHTML += `</table>`;
+            Output_String += `</table>`;
+            document.getElementById(this.Output_id).innerHTML = Output_String;
         }
     }
     clear_Element(num) {
